@@ -5,7 +5,7 @@
 1. access the container and start a shell 
 
 
-##Steps
+### Steps
 
 #### 1)  installed AWS copilot on local machine: 
 
@@ -56,16 +56,16 @@ copilot init --app page \
   --deploy
 ```
 
-As a result the test environment page [is available](https://web.test.page.dazl.ca)
+As a result the test environment page **[is available](https://web.test.page.dazl.ca)**.
 
-#### 8)add a production environment
+#### 8) add a production environment
 Some interaction is required to re-use existing VPC and subnets
 
 ```
 copilot env init --name prod --profile <my-aws-profile-name> --prod
 ```
 
-**_note_**: this lets you use a different region and aws account if desired and later add a pipeline that spans across regions -- I'm impressed
+**_note_**: this lets you use a different region and aws account if desired and later add a pipeline that spans across regions -- I'm impressed.
 
 #### 9) set up a CI/CD pipeline
 
@@ -77,8 +77,8 @@ copilot pipeline init \
 --environments "test,prod" 
 ```
 
- - follow the instructions returned by the CLI and the prod environment [appears](https://web.prod.page.dazl.ca). 
- - try a code change and see the build automatically start and being pushed to test and then prod. See CodeBuild and CodePipeline in the AWS console 
+ - follow the instructions returned by the CLI and the prod environment **[appears](https://web.prod.page.dazl.ca)**. 
+ - try a code change and see the build automatically start and being pushed to test and then prod. See CodeBuild and CodePipeline in the AWS console.
  
 #### 10) access task and run commands
 
